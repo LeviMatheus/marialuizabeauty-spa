@@ -1,0 +1,49 @@
+:root {
+    /* Variáveis Cores globais */
+    --cor-azul: #0004ff;
+    --cor-verde: #00ff00;
+    --cor-amarelo: #fffb00;
+    --cor-vermelho: #ff0000;
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+    --tamanho-fonte: 16px;
+}
+
+.menu ul {
+    list-style: none; /* Deixa o menu flex */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.menu li {
+    margin-right: 20px;
+}
+  
+.menu a {
+    text-decoration: none; /* Tira as bolinhas dos links do menu */
+    color: #333;
+}
+  
+.menu-icon {
+    display: none; /* Esconde o ícone do menu hambúrguer por padrão */
+}
+
+.menu #menu-toggle{
+    display: none;
+}
+
+/* Limitando o menu hamburguer para resoluções específicas */
+@media screen and (max-width: 768px) {
+    .menu ul {
+      display: none; /* Esconde o menu padrão em telas menores */
+    }
+  
+    .menu-icon {
+      display: block; /* Exibe o ícone do menu hambúrguer em telas menores */
+    }
+  
+    /* Adicione estilos específicos do menu hambúrguer aqui */
+  }
+  
+  
