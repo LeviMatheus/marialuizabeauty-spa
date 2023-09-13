@@ -1,3 +1,6 @@
+/* importando fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 :root {
     /* Variáveis Cores globais */
     --cor-azul: #0004ff;
@@ -14,7 +17,20 @@
     margin: 0;
 }
 
-.flex-menu {
+body{
+    height: 100vh; /* o body ocupar 100% da tela do dispositivo */
+    box-sizing: border-box; /* elementos filhos do body vão ocupar somente o espaço do body, ou seja, não sair da tela */
+}
+
+.apresentacao__nav__menu__checkbox{ /* Altera a visibilidade */
+    display: none;
+}
+
+.apresentacao__nav__menu__icon {
+    display: none; /* Esconde o ícone do menu hambúrguer por padrão */
+}
+
+.apresentacao__nav__menu__lista {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -27,30 +43,23 @@
     height: 100%;
 }
   
-.flex-menu .flex-item {
+.apresentacao__nav__menu__lista__item {
     margin-right: 40px; /* espaçamento fixo entre os itens do menu */
+    font-family: 'Oswald', sans-serif;
 }
 
-.flex-menu a {
+.apresentacao__nav__menu__lista__item a {
     text-decoration: none; /* Tira as bolinhas dos links do menu */
     color: #333;
 }
-  
-.menu-icon {
-    display: none; /* Esconde o ícone do menu hambúrguer por padrão */
-}
 
-.menu #menu-toggle{ /* Altera a visibilidade */
-    display: none;
-}
-
-/* Limitando o menu hamburguer para resoluções específicas */
+/* Limitando o menu hamburguer para resoluções até 768px*/
 @media screen and (max-width: 768px) {
-    .menu ul {
+    .apresentacao__nav__menu__lista {
       display: none; /* Esconde o menu padrão em telas menores */
     }
   
-    .menu-icon {
+    .apresentacao__nav__menu__icon {
       display: block; /* Exibe o ícone do menu hambúrguer em telas menores */
     }
   

@@ -6,50 +6,69 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="estilos/style.css">
+        <!-- tags meta -->
+        <!-- Mudando a codificação para utf-8 -->
+        <meta charset="UTF-8"> 
+        <!-- Definir a compatibilidade do navegador da web, especialmente no contexto do Internet Explorer (IE) -->
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <!-- Controlar a forma como um site é exibido em dispositivos móveis, como smartphones e tablets -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <!-- Navegação -->
-        <nav class="nav">
-            <div class="container">
-                <div class="row">
-                    <!-- Logo -->
-                    <div class="logo-wrapper col">
-                        <a class="navbar-brand" href="#">
-                            <img src="img/mlb-logo-temp.png" height="20" alt="Maria Luiza Beauty Logo" loading="lazy" />
-                        </a>
-                    </div>
-                    <!-- Menu Normal/Hamburguer -->
-                    <div class="menu col">
-                        <input type="checkbox" id="menu-toggle">
-                        <!-- Essa label ativa o checkbox de cima, para alternar o menu hamburguer -->
-                        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-                        <ul class="navbar-nav flex-menu">
-                            <li class="nav-item flex-item"><a href="#inicio">Início</a></li>
-                            <li class="nav-item flex-item"><a href="#sobre">Sobre</a></li>
-                            <li class="nav-item flex-item"><a href="#servicos">Serviços</a></li>
-                            <li class="nav-item flex-item"><a href="#portifolio">Portifólio</a></li>
-                            <li class="nav-item flex-item"><a href="#contato">Contato</a></li>
-                        </ul>
+        <header></header>
+        <main class="apresentacao">
+            <!-- Navegação -->
+            <nav class="apresentacao__nav">
+                <div class="container">
+                    <div class="row">
+                        <!-- Logo -->
+                        <div class="apresentacao__nav__logo logo-wrapper col">
+                            <a class="navbar-brand" href="#">
+                                <img src="img/mlb-logo-temp.png" height="20" alt="Maria Luiza Beauty Logo" loading="lazy" />
+                            </a>
+                        </div>
+                        <!-- Menu Normal/Hamburguer -->
+                        <div class="apresentacao__nav__menu col">
+                            <input type="checkbox" id="menu-toggle" class="apresentacao__nav__menu__checkbox">
+                            <!-- Essa label ativa o checkbox de cima, para alternar o menu hamburguer -->
+                            <label for="menu-toggle" class="apresentacao__nav__menu__icon">&#9776;</label>
+                            <ul class="navbar-nav apresentacao__nav__menu__lista">
+                                <li class="nav-item apresentacao__nav__menu__lista__item">
+                                    <a href="#inicio">Início</a>
+                                </li>
+                                <li class="nav-item apresentacao__nav__menu__lista__item">
+                                    <a href="#sobre">Sobre</a>
+                                </li>
+                                <li class="nav-item apresentacao__nav__menu__lista__item">
+                                    <a href="#servicos">Serviços</a>
+                                </li>
+                                <li class="nav-item apresentacao__nav__menu__lista__item">
+                                    <a href="#portifolio">Portifólio</a>
+                                </li>
+                                <li class="nav-item apresentacao__nav__menu__lista__item">
+                                    <a href="#contato">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
-        <!-- Home -->
-        <section id="inicio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
+            <!-- Home -->
+            <section id="apresentacao__secao">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-            <!-- Sobre -->
-            <!-- Serviços -->
-            <!-- Portifólio -->
-            <!-- Opiniões -->
-            <!-- Rodapé -->
-
+            </section>
+                <!-- Sobre -->
+                <!-- Serviços -->
+                <!-- Portifólio -->
+                <!-- Opiniões -->
+                <!-- Rodapé -->
+            </main>
         <!-- jQuery (Bootstrap depende do jQuery) -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!-- Popper.js (opcional, mas necessário para alguns recursos do Bootstrap) -->
