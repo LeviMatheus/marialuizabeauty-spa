@@ -22,7 +22,54 @@ body{
     box-sizing: border-box; /* elementos filhos do body vão ocupar somente o espaço do body, ou seja, não sair da tela */
 }
 
-.apresentacao__nav__menu__checkbox{ /* Altera a visibilidade */
+.apresentacao{ /* tag main também ocupar 100% da tela do dispositivo */
+    height: 100vh
+}
+
+.apresentacao__nav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 99;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100px;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .apresentacao__nav{
+        padding-left: 0px;
+        padding-right: 0px;
+        background: transparent;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 75px;
+    }
+}
+
+.apresentacao__nav__container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.apresentacao__nav__menu{
+    display: flex;
+    flex-basis: auto;
+}
+
+.apresentacao__nav__logo {
+    float: left;
+}
+
+.apresentacao__nav__menu__checkbox { /* Altera a visibilidade */
     display: none;
 }
 
@@ -41,6 +88,10 @@ body{
     align-items: center;
     align-content: center;
     height: 100%;
+}
+
+.ms-auto{
+    margin-left: auto;
 }
   
 .apresentacao__nav__menu__lista__item {
