@@ -22,8 +22,12 @@ body{
     box-sizing: border-box; /* elementos filhos do body vão ocupar somente o espaço do body, ou seja, não sair da tela */
 }
 
+.container {
+    width: 100% !important;;
+}
+
 .apresentacao{ /* tag main também ocupar 100% da tela do dispositivo */
-    height: 100vh
+    height: 100vh;
 }
 
 .apresentacao__nav{
@@ -39,31 +43,24 @@ body{
     padding-bottom: 0;
     height: 100px;
     border: none;
-}
-
-@media screen and (max-width: 768px) {
-    .apresentacao__nav{
-        padding-left: 0px;
-        padding-right: 0px;
-        background: transparent;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 75px;
-    }
+    box-sizing: border-box;
 }
 
 .apresentacao__nav__container{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .apresentacao__nav__menu{
     display: flex;
     flex-basis: auto;
     justify-content: end;
+    align-items: center;
+    padding: 16px 24px;
 }
 
 .apresentacao__nav__logo {
@@ -71,6 +68,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 16px 24px;
 }
 
 .apresentacao__nav__menu__checkbox { /* Altera a visibilidade */
@@ -78,20 +76,11 @@ body{
 }
 
 .apresentacao__nav__menu__icon {
-    display: none; /* Esconde o ícone do menu hambúrguer por padrão */
+    display: block; /*Esconde o ícone do menu hambúrguer por padrão */
 }
 
 .apresentacao__nav__menu__lista {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;/* Deixa o menu flex */
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    height: 100%;
+    display: none;
 }
   
 .apresentacao__nav__menu__lista__item {
@@ -104,15 +93,45 @@ body{
     color: #333;
 }
 
-/* Limitando o menu hamburguer para resoluções até 768px*/
-@media screen and (max-width: 768px) {
-    .apresentacao__nav__menu__lista {
-      display: none; /* Esconde o menu padrão em telas menores */
-    }
+@media screen and (min-width: 768px) {
   
     .apresentacao__nav__menu__icon {
-      display: block; /* Exibe o ícone do menu hambúrguer em telas menores */
+      display: none; /* Exibe o ícone do menu hambúrguer em telas menores */
     }
-  }
+
+    .apresentacao__nav__menu__lista{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;/* Deixa o menu flex */
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /*.apresentacao__nav__container {
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .apresentacao__nav__menu__icon{
+        margin: 0;
+    }*/
+
+    .apresentacao__nav__logo{
+        margin: 0 auto;
+    }
+
+    .apresentacao__nav__menu{
+        margin: 0 auto;
+    }
+}
   
   
