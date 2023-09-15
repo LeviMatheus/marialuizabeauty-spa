@@ -63,10 +63,14 @@ body{
 .apresentacao__nav__menu{
     display: flex;
     flex-basis: auto;
+    justify-content: end;
 }
 
 .apresentacao__nav__logo {
     float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .apresentacao__nav__menu__checkbox { /* Altera a visibilidade */
@@ -89,10 +93,6 @@ body{
     align-content: center;
     height: 100%;
 }
-
-.ms-auto{
-    margin-left: auto;
-}
   
 .apresentacao__nav__menu__lista__item {
     margin-right: 40px; /* espaçamento fixo entre os itens do menu */
@@ -113,8 +113,6 @@ body{
     .apresentacao__nav__menu__icon {
       display: block; /* Exibe o ícone do menu hambúrguer em telas menores */
     }
-  
-    /* Adicione estilos específicos do menu hambúrguer aqui */
   }
   
   
