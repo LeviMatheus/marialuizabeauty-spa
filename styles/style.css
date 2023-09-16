@@ -1,0 +1,180 @@
+/* importando fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root {
+    /* Variáveis Cores globais */
+    --cor-azul: #0004ff;
+    --cor-verde: #00ff00;
+    --cor-amarelo: #fffb00;
+    --cor-vermelho: #ff0000;
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+    --cor-cinza: #333;
+    --cor-roxo: #9d13af;
+    
+    /* Fontes */
+    --tamanho-fonte: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh; /* o body ocupar 100% da tela do dispositivo */
+    box-sizing: border-box; /* elementos filhos do body vão ocupar somente o espaço do body, ou seja, não sair da tela */
+}
+
+.container-fluid {
+    width: 100% !important;
+}
+
+.cabecalho{ /* tag main também ocupar 100% da tela do dispositivo */
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.cabecalho__nav{
+    /*position: absolute;*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 99;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho__nav__container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: auto 16px auto 16px;
+}
+
+.cabecalho__nav__container__menu{
+    display: flex;
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
+    /*padding: 16px 3%;*/
+    box-sizing: border-box;
+}
+
+.cabecalho__nav__container__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*padding: 16px 3%;*/
+    box-sizing: border-box;
+}
+
+.cabecalho__nav__container__menu__checkbox { /* Altera a visibilidade */
+    display: none;
+}
+
+.cabecalho__nav__container__menu__icon {
+    display: block; /*Esconde o ícone do menu hambúrguer por padrão */
+}
+
+.cabecalho__nav__container__logo__img{
+    height: 60px;
+}
+
+.cabecalho__nav__container__menu__lista {
+    display: none;
+}
+  
+.cabecalho__nav__container__menu__lista__item {
+    /* margin-right: 40px; espaçamento fixo entre os itens do menu */
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-link {
+    text-decoration: none; /* Tira as bolinhas dos links do menu */
+    font-size: var(--tamanho-fonte);
+    font-weight: 400;
+    color: var(--cor-preto);
+    margin: 1px;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color: var(--cor-roxo);
+}
+
+@media screen and (min-width: 768px) {
+  
+    .cabecalho__nav__container__menu__icon {
+      display: none; /* Exibe o ícone do menu hambúrguer em telas menores */
+    }
+
+    .cabecalho__nav__container__menu__lista{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;/* Deixa o menu flex */
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 100%;
+        gap:24px;
+    }
+}
+
+/*@media screen and (min-width: 992px) {
+    .cabecalho__nav__container{
+        padding: 0 7%;
+    }
+}*/
+
+@media screen and (max-width: 250px) {
+    .cabecalho__nav__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        gap: 16px;
+    }
+
+    .cabecalho__nav__container__logo{
+        margin: 0 auto;
+    }
+
+    .cabecalho__nav__container__menu{
+        margin: 0 auto;
+        display: flex;
+        flex-basis: auto;
+        justify-content: end;
+        align-items: center;
+        /*padding: 16px 3%;*/
+        box-sizing: border-box;
+    }
+
+    .cabecalho__nav__container__menu__icon{
+        margin: 0;
+    }
+
+    .cabecalho__nav__container__logo__img{
+        height: 40px;
+    }
+}
+  
+  
