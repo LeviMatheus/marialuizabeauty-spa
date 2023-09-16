@@ -15,45 +15,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <header></header>
-        <main class="apresentacao">
+        <header class="cabecalho">
             <!-- Navegação -->
-            <nav class="apresentacao__nav">
-                <div class="container apresentacao__nav__container">
+            <nav class="cabecalho__nav">
+                <div class="container-fluid cabecalho__nav__container">
                     <!-- Logo -->
-                    <div class="apresentacao__nav__logo">
-                        <a class="" href="index.html">
+                    <div class="cabecalho__nav__logo">
+                        <a class="" href="index.html#inicio">
                             <img src="assets/mlb-logo-temp.png" height="60" alt="Maria Luiza Beauty Logo" loading="lazy" />
                         </a>
                     </div>
                     <!-- Nav/Menu -->
-                    <div class="apresentacao__nav__menu">
-                        <input type="checkbox" id="menu-toggle" class="apresentacao__nav__menu__checkbox">
+                    <div class="cabecalho__nav__menu">
+                        <input type="checkbox" id="menu-toggle" class="cabecalho__nav__menu__checkbox">
                         <!-- Essa label ativa o checkbox de cima, para alternar o menu hamburguer -->
-                        <label for="menu-toggle" class="apresentacao__nav__menu__icon">&#9776;</label>
-                        <ul class="navbar-nav apresentacao__nav__menu__lista">
-                            <li class="nav-item apresentacao__nav__menu__lista__item">
-                                <a href="#inicio">Início</a>
+                        <label for="menu-toggle" class="cabecalho__nav__menu__icon">&#9776;</label>
+                        <ul class="navbar-nav cabecalho__nav__menu__lista">
+                            <li class="nav-item cabecalho__nav__menu__lista__item">
+                                <a class="nav-link active" href="#inicio">Início</a>
                             </li>
-                            <li class="nav-item apresentacao__nav__menu__lista__item">
-                                <a href="#sobre">Sobre</a>
+                            <li class="nav-item cabecalho__nav__menu__lista__item">
+                                <a class="nav-link" href="#sobre">Sobre</a>
                             </li>
-                            <li class="nav-item apresentacao__nav__menu__lista__item">
-                                <a href="#servicos">Serviços</a>
+                            <li class="nav-item cabecalho__nav__menu__lista__item">
+                                <a class="nav-link" href="#servicos">Serviços</a>
                             </li>
-                            <li class="nav-item apresentacao__nav__menu__lista__item">
-                                <a href="#portifolio">Portifólio</a>
+                            <li class="nav-item cabecalho__nav__menu__lista__item">
+                                <a class="nav-link" href="#portifolio">Portifólio</a>
                             </li>
-                            <li class="nav-item apresentacao__nav__menu__lista__item">
-                                <a href="#contato">Contato</a>
+                            <li class="nav-item cabecalho__nav__menu__lista__item">
+                                <a class="nav-link" href="#contato">Contato</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
+        </header>
+        <main >
             <!-- Home -->
-            <section id="apresentacao__secao">
+            <section>
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -61,12 +61,14 @@
                     </div>
                 </div>
             </section>
-                <!-- Sobre -->
-                <!-- Serviços -->
-                <!-- Portifólio -->
-                <!-- Opiniões -->
-                <!-- Rodapé -->
-            </main>
+            <!-- Sobre -->
+            <!-- Serviços -->
+            <!-- Portifólio -->
+            <!-- Opiniões -->
+        </main>
+        <footer>
+            <!-- Rodapé -->
+        </footer>
         <!-- jQuery (Bootstrap depende do jQuery) -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!-- Popper.js (opcional, mas necessário para alguns recursos do Bootstrap) -->
