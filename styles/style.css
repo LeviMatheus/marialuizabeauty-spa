@@ -21,7 +21,7 @@
     margin: 0;
 }
 
-body{
+body {
     height: 100vh; /* o body ocupar 100% da tela do dispositivo */
     box-sizing: border-box; /* elementos filhos do body vão ocupar somente o espaço do body, ou seja, não sair da tela */
 }
@@ -30,12 +30,12 @@ body{
     width: 100% !important;
 }
 
-.cabecalho{ /* tag main também ocupar 100% da tela do dispositivo */
+.cabecalho { /* tag main também ocupar 100% da tela do dispositivo */
     height: 100px;
     box-sizing: border-box;
 }
 
-.cabecalho__nav{
+.cabecalho__nav {
     /*position: absolute;*/
     left: 0;
     top: 0;
@@ -51,7 +51,7 @@ body{
     justify-content: center;
 }
 
-.cabecalho__nav__container{
+.cabecalho__nav__container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -60,32 +60,19 @@ body{
     margin: auto 16px auto 16px;
 }
 
-.cabecalho__nav__container__menu{
+/*.cabecalho__nav__container__menu {
     display: flex;
     flex-basis: auto;
     justify-content: center;
     align-items: center;
-    /*padding: 16px 3%;*/
     box-sizing: border-box;
-}
-
-.cabecalho__nav__container__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*padding: 16px 3%;*/
-    box-sizing: border-box;
-}
-
-.cabecalho__nav__container__menu__checkbox { /* Altera a visibilidade */
-    display: none;
-}
+}*/
 
 .cabecalho__nav__container__menu__icon {
     display: block; /*Esconde o ícone do menu hambúrguer por padrão */
 }
 
-.cabecalho__nav__container__logo__img{
+.cabecalho__nav__container__logo__img {
     height: 60px;
 }
 
@@ -119,15 +106,15 @@ body{
 
 @media screen and (min-width: 768px) {
   
-    .cabecalho__nav__container__menu__icon {
-      display: none; /* Exibe o ícone do menu hambúrguer em telas menores */
+    /*.cabecalho__nav__container__menu__icon {
+      display: none;
     }
 
     .cabecalho__nav__container__menu__lista{
         list-style: none;
         margin: 0;
         padding: 0;
-        display: flex;/* Deixa o menu flex */
+        display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
@@ -135,7 +122,7 @@ body{
         align-content: center;
         height: 100%;
         gap:24px;
-    }
+    }*/
 }
 
 /*@media screen and (min-width: 992px) {
@@ -145,35 +132,35 @@ body{
 }*/
 
 @media screen and (max-width: 250px) {
-    .cabecalho__nav__container{
+    /*.cabecalho__nav__container{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         box-sizing: border-box;
         gap: 16px;
-    }
+    }*/
 
-    .cabecalho__nav__container__logo{
-        margin: 0 auto;
-    }
-
-    .cabecalho__nav__container__menu{
+    /*.cabecalho__nav__container__menu{
         margin: 0 auto;
         display: flex;
         flex-basis: auto;
         justify-content: end;
         align-items: center;
-        /*padding: 16px 3%;*/
         box-sizing: border-box;
-    }
+    }*/
 
     .cabecalho__nav__container__menu__icon{
         margin: 0;
     }
 
-    .cabecalho__nav__container__logo__img{
+    /*.cabecalho__nav__container__logo__img{
         height: 40px;
+    }*/
+
+    .navbar {
+        justify-content: center;
+        gap: 8px;
     }
 }
   
