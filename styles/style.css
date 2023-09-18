@@ -25,6 +25,10 @@
 body {
     height: 100vh; /* o body ocupar 100% da tela do dispositivo */
     box-sizing: border-box; /* elementos filhos do body vão ocupar somente o espaço do body, ou seja, não sair da tela */
+    background-image: url('../assets/parallax.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .container-fluid {
@@ -32,11 +36,11 @@ body {
 }
 
 .cabecalho { /* tag main também ocupar 100% da tela do dispositivo */
-    /* height: 15vh; tamanho fixo do header (cabecalho) */
-    min-height: 86px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    background-color: white;
+    opacity: 0.9;
 }
 
 .logo__img {
@@ -59,12 +63,46 @@ body {
     color: var(--cor-roxo) !important;
 }
 
-.fundo_imagem {
-    background-image: url('../assets/parallax.jpg');
-    height: 87vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+.navbar {
+    padding: 0px !important;
+    background-color: white;
+    opacity: 0.9;
+    min-height: 82px;
+}
+
+.navbar .navbar-collapse {
+    overflow: auto;
+    background: #fff;
+    text-align: left;
+    width: 100vw;
+    padding: 20px;
+}
+
+.navbar-brand {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.navbar-toggler {
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
   
-  
+@media (max-width: 200px) {
+    .cabecalho{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        min-height: auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+}
