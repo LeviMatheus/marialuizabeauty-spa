@@ -17,164 +17,92 @@
 }
 
 * {
+    /* resetando as medidas do css */
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     height: 100vh; /* o body ocupar 100% da tela do dispositivo */
     box-sizing: border-box; /* elementos filhos do body vão ocupar somente o espaço do body, ou seja, não sair da tela */
+    background-image: url('../assets/parallax.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .container-fluid {
-    width: 100% !important;
+    width: 100% !important; /* Ocupar 100% da largura da tela */
 }
 
-.cabecalho{ /* tag main também ocupar 100% da tela do dispositivo */
-    height: 100px;
-    box-sizing: border-box;
-}
-
-.cabecalho__nav{
-    /*position: absolute;*/
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    z-index: 99;
-    padding: 0;
-    border: none;
+.cabecalho { /* tag main também ocupar 100% da tela do dispositivo */
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: center;
+    background-color: white;
+    opacity: 0.9;
 }
 
-.cabecalho__nav__container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    margin: auto 16px auto 16px;
-}
-
-.cabecalho__nav__container__menu{
-    display: flex;
-    flex-basis: auto;
-    justify-content: center;
-    align-items: center;
-    /*padding: 16px 3%;*/
-    box-sizing: border-box;
-}
-
-.cabecalho__nav__container__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*padding: 16px 3%;*/
-    box-sizing: border-box;
-}
-
-.cabecalho__nav__container__menu__checkbox { /* Altera a visibilidade */
-    display: none;
-}
-
-.cabecalho__nav__container__menu__icon {
-    display: block; /*Esconde o ícone do menu hambúrguer por padrão */
-}
-
-.cabecalho__nav__container__logo__img{
-    height: 60px;
-}
-
-.cabecalho__nav__container__menu__lista {
-    display: none;
-}
-  
-.cabecalho__nav__container__menu__lista__item {
-    /* margin-right: 40px; espaçamento fixo entre os itens do menu */
-    font-family: 'Oswald', sans-serif;
+.logo__img {
+    height: 60px; /* tamanho fixo da logo */
 }
 
 .nav-link {
-    text-decoration: none; /* Tira as bolinhas dos links do menu */
-    font-size: var(--tamanho-fonte);
-    font-weight: 400;
-    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte); /* usando as variáveis de tamanho de fonte */
+    font-weight: 400; /* definindo o peso da fonte */
+    color: var(--cor-preto) !important; /* cor do texto do menu */
     margin: 1px;
-    -webkit-transition: all .4s;
-    transition: all .4s;
-    padding-right: 12px;
-    padding-left: 12px;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+    -webkit-transition: all .4s; /* Chrome e Safari, propriedades do elemento alteradas terá transição de 0.4 segundos */
+    transition: all .4s; /* Outros navegadores, propriedades do elemento alterada terá transição de 0.4 segundos */
+    font-family: 'Oswald', sans-serif; /* definindo a família de fonte do texto */
+    letter-spacing: 3px; /* espaçamento entre as letras para dar efeito visual */
+    text-transform: uppercase; /* definindo letras maiúsculas para o texto */
 }
 
-.nav-link:hover{
-    color: var(--cor-roxo);
+.nav-link:hover {
+    color: var(--cor-roxo) !important;
 }
 
-@media screen and (min-width: 768px) {
+.navbar {
+    padding: 0px !important;
+    background-color: white;
+    opacity: 0.9;
+    min-height: 82px;
+}
+
+.navbar .navbar-collapse {
+    overflow: auto;
+    background: #fff;
+    text-align: left;
+    width: 100vw;
+    padding: 20px;
+}
+
+.navbar-brand {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.navbar-toggler {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
   
-    .cabecalho__nav__container__menu__icon {
-      display: none; /* Exibe o ícone do menu hambúrguer em telas menores */
-    }
-
-    .cabecalho__nav__container__menu__lista{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;/* Deixa o menu flex */
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        height: 100%;
-        gap:24px;
-    }
-}
-
-/*@media screen and (min-width: 992px) {
-    .cabecalho__nav__container{
-        padding: 0 7%;
-    }
-}*/
-
-@media screen and (max-width: 250px) {
-    .cabecalho__nav__container{
+@media (max-width: 200px) {
+    .cabecalho{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
-        box-sizing: border-box;
-        gap: 16px;
+        height: auto;
+        min-height: auto;
     }
 
-    .cabecalho__nav__container__logo{
-        margin: 0 auto;
-    }
-
-    .cabecalho__nav__container__menu{
-        margin: 0 auto;
+    .navbar {
         display: flex;
-        flex-basis: auto;
-        justify-content: end;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        /*padding: 16px 3%;*/
-        box-sizing: border-box;
-    }
-
-    .cabecalho__nav__container__menu__icon{
-        margin: 0;
-    }
-
-    .cabecalho__nav__container__logo__img{
-        height: 40px;
+        gap: 8px;
     }
 }
-  
-  
