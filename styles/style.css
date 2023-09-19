@@ -64,10 +64,10 @@ body {
 }
 
 .navbar {
-    padding: 0px !important;
+    /*padding: 0px !important;*/
     background-color: white;
     opacity: 0.9;
-    min-height: 82px;
+    /*min-height: 98px;*/
 }
 
 .navbar .navbar-collapse {
@@ -88,10 +88,10 @@ body {
     margin-left: 1rem;
 }
   
-@media (max-width: 200px) {
+@media (max-width: 235px) {
     .cabecalho{
         display: flex;
-        flex-direction: column;
+        /*flex-direction: column;*/
         justify-content: center;
         align-items: center;
         height: auto;
@@ -100,7 +100,7 @@ body {
 
     .navbar {
         display: flex;
-        flex-direction: column;
+        /*flex-direction: column;*/
         justify-content: center;
         align-items: center;
         gap: 8px;
