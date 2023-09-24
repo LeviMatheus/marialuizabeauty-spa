@@ -3,17 +3,20 @@
 
 :root {
     /* Variáveis Cores globais */
-    --cor-azul: #0004ff;
-    --cor-verde: #00ff00;
-    --cor-amarelo: #fffb00;
-    --cor-vermelho: #ff0000;
-    --cor-branco: #ffffff;
-    --cor-preto: #000000;
-    --cor-cinza: #333;
-    --cor-roxo: #9d13af;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #000000;
+    --cor-neutra: #333;
+    --cor-principal: #9d13af;
+    --cor-principal-texto: #e51cff;
+    --cor-secundaria-texto: #ffffff;
+    --cor-terciaria-texto: #000000;
     
     /* Fontes */
-    --tamanho-fonte: 16px;
+    --tamanho-fonte: 1rem;
+    --estilo-fonte-primario: 'Oswald', sans-serif;
+    --estilo-fonte-secundario: 'Didact Gothic', sans-serif;
+    --espacamento-estilo-pequeno: 0.2rem;
+    --espacamento-estilo-medio: 0.4rem;
 }
 
 * {
@@ -28,81 +31,147 @@ body {
     background-image: url('../assets/parallax.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: right right;
 }
 
-.container-fluid {
-    width: 100% !important; /* Ocupar 100% da largura da tela */
+.logo__img { /* logo no navbar */
+    height: 60px; /* tamanho fixo */
 }
 
-.cabecalho { /* tag main também ocupar 100% da tela do dispositivo */
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    opacity: 0.9;
-}
-
-.logo__img {
-    height: 60px; /* tamanho fixo da logo */
-}
-
-.nav-link {
+.nav-link { /* link para as páginas no navbar */
     font-size: var(--tamanho-fonte); /* usando as variáveis de tamanho de fonte */
     font-weight: 400; /* definindo o peso da fonte */
-    color: var(--cor-preto) !important; /* cor do texto do menu */
+    color: var(--cor-secundaria) !important; /* cor do texto do menu */
     margin: 1px;
     -webkit-transition: all .4s; /* Chrome e Safari, propriedades do elemento alteradas terá transição de 0.4 segundos */
     transition: all .4s; /* Outros navegadores, propriedades do elemento alterada terá transição de 0.4 segundos */
-    font-family: 'Oswald', sans-serif; /* definindo a família de fonte do texto */
-    letter-spacing: 3px; /* espaçamento entre as letras para dar efeito visual */
+    font-family: var(--estilo-fonte-primario); /* definindo a família de fonte do texto */
     text-transform: uppercase; /* definindo letras maiúsculas para o texto */
 }
 
-.nav-link:hover {
-    color: var(--cor-roxo) !important;
+.nav-link:hover { /* quando mouse sobre link da navbar mudar de cor */
+    color: var(--cor-principal-texto) !important; /* com !important estou citando que isso sobrescreverá todos outros CSSs*/
+    cursor: pointer;
 }
 
-.navbar {
-    /*padding: 0px !important;*/
-    background-color: white;
-    opacity: 0.9;
-    /*min-height: 98px;*/
-}
-
-.navbar .navbar-collapse {
-    overflow: auto;
-    background: #fff;
-    text-align: left;
-    width: 100vw;
-    padding: 20px;
-}
-
-.navbar-brand {
-    margin-right: 1rem;
-    margin-left: 1rem;
+.navbar { /* barra de navegação */
+    background-color: transparent; /* cor transparente */
+    backdrop-filter: blur(3px); /* efeito de embaçado nos elementos ao fundo */
 }
 
 .navbar-toggler {
-    margin-right: 1rem;
-    margin-left: 1rem;
+    border-color: var(--cor-principal-texto) !important;
 }
-  
-@media (max-width: 235px) {
-    .cabecalho{
-        display: flex;
-        /*flex-direction: column;*/
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        min-height: auto;
-    }
 
-    .navbar {
+.navbar-toggler .menu_hamburguer_icone {
+    color: var(--cor-principal-texto);
+}
+
+.navbar .navbar-collapse { /* navbar quando colapsada */
+    overflow: auto;
+    background-color: transparent; /* cor transparente */
+}
+
+@media (max-width: 235px) { /* ajustar navegação quando resolução mínima 235  */
+    .container-nav {
         display: flex;
-        /*flex-direction: column;*/
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center !important;
         gap: 8px;
     }
+
+    .texto-principal {
+        font-size: 3rem !important;
+    }
+}
+
+.letras-espacadas-pequeno {
+    letter-spacing: var(--espacamento-estilo-pequeno);/* espaçamento entre as letras para dar efeito visual */
+    text-transform: uppercase;
+    font-family: var(--estilo-fonte-primario);
+}
+
+.letras-espacadas-medio {
+    letter-spacing: var(--espacamento-estilo-medio);/* espaçamento entre as letras para dar efeito visual */
+    text-transform: uppercase;
+    font-family: var(--estilo-fonte-primario);
+}
+
+.section__inicio { /* Seção do início */
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.texto-principal { /* div para font roxa */
+    color: var(--cor-principal-texto);
+    font-size: 5rem;
+}
+
+.texto-secundario { /* div para font branca */
+    color: var(--cor-secundaria-texto) !important;
+}
+
+.texto-terciario { /* div para font preto */
+    color: var(--cor-terciaria-texto) !important;
+}
+
+.texto-branco {
+    color: var(--cor-secundaria) !important;
+}
+
+.btn_cta {
+    color: var(--cor-secundaria);
+    font-family: var(--estilo-fonte-secundario);
+    font-size: 0.8rem;
+    background-color: var(--cor-principal);
+    border-radius: 0;
+    padding: 0.8rem 1rem;
+    padding: 12px 32px;
+}
+
+.separador {
+    width: 70px;
+    border-top: 1px solid var(--cor-principal-texto);
+}
+
+.section__inicio__div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+@keyframes bounce { /* animação de ficar "pulando" */
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+.seta_scroll {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+}
+
+.icone_seta {
+    margin: 10px;
+    font-size: 1.5rem;
+    display: inline-block;
+    color: var(--cor-secundaria);
+}
+
+.div_flutuante{
+    position: relative;
+    top: 15vh;
+    z-index: 100;
+    animation: bounce 2s infinite;
 }
