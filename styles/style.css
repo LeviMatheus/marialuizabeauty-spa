@@ -19,6 +19,10 @@
     --espacamento-estilo-medio: 0.4rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     /* resetando as medidas do css */
     padding: 0;
@@ -26,12 +30,9 @@
 }
 
 body {
-    height: 100vh; /* o body ocupar 100% da tela do dispositivo */
-    box-sizing: border-box; /* elementos filhos do body vão ocupar somente o espaço do body, ou seja, não sair da tela */
-    background-image: url('../assets/parallax.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right right;
+    /* height: 100vh; o body ocupar 100% da tela do dispositivo */
+    overflow-x: hidden;
+    background-color: var(--cor-secundaria);
 }
 
 .logo__img { /* logo no navbar */
@@ -89,6 +90,7 @@ body {
     letter-spacing: var(--espacamento-estilo-pequeno);/* espaçamento entre as letras para dar efeito visual */
     text-transform: uppercase;
     font-family: var(--estilo-fonte-primario);
+    line-height: 1.2em;
 }
 
 .letras-espacadas-medio {
@@ -98,10 +100,16 @@ body {
 }
 
 .section__inicio { /* Seção do início */
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
+    box-sizing: border-box; /* elementos filhos do body vão ocupar somente o espaço do body, ou seja, não sair da tela */
+    background-image: url('../assets/parallax.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .texto-principal { /* div para font roxa */
@@ -174,4 +182,43 @@ body {
     top: 15vh;
     z-index: 100;
     animation: bounce 2s infinite;
+}
+
+.section__sobre { /* Seção do sobre */
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.section__sobre__img {
+    box-sizing: border-box; /* elementos filhos do body vão ocupar somente o espaço do body, ou seja, não sair da tela */
+    background-image: url('../assets/about.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: center center;*/
+    position: relative;
+    min-height: 450px;
+    width: 100%;
+}
+
+.texto_highlight {
+    color: var(--cor-principal-texto);
+    /*background-color: var(--cor-terciaria);*/
+}
+
+.texto__secundario {
+    font-family: var(--estilo-fonte-secundario);
+    font-weight: 400;
+    line-height: 1.75em;
+    font-size: 1rem;
+}
+
+.texto__letreiro__nome {
+    font-size: 3rem;
+    line-height: 1.2em;
+    font-weight: 400;
 }
