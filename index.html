@@ -1,130 +1,196 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- Título da página -->
-        <title>Maria Luiza Beauty</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="styles/themify-icons.css">
-        <link rel="stylesheet" href="styles/style.css">
-        <!-- tags meta -->
-        <!-- Mudando a codificação para utf-8 -->
-        <meta charset="UTF-8"> 
-        <!-- Definir a compatibilidade do navegador da web, especialmente no contexto do Internet Explorer (IE) -->
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <!-- Controlar a forma como um site é exibido em dispositivos móveis, como smartphones e tablets -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <main>
-            <!-- Navegação -->
-            <nav class="navbar fixed-top navbar-expand-md navbar-light" role="navigation">
-                <div class="container container-nav">
-                    <!-- Logo -->
-                    <a class="navbar-brand" href="index.html#inicio">
-                        <img class="logo__img" src="assets/mlb-logo-white.png" alt="Maria Luiza Beauty Logo" loading="lazy" />
-                    </a> 
-                    <!-- Menu Hamburguer -->
-                    <button class="navbar-dark navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Alterna navegação">
-                        <!--<span class="navbar-toggler-icon"></span>-->
-                        <span class="menu_hamburguer_icone ti-menu"></span>
-                    </button>
-                    <!-- Lista de itens do menu -->
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active nav-link-ativo letras-espacadas-pequeno" href="#inicio">Início</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link letras-espacadas-pequeno" href="#sobre">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link letras-espacadas-pequeno" href="#servicos">Serviços</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link letras-espacadas-pequeno" href="#portifolio">Portifólio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link letras-espacadas-pequeno" href="#contato">Contato</a>
-                            </li>
-                        </ul>
+<html lang="pt-BR">
+
+<head>
+    <!-- Título da página -->
+    <title>Maria Luiza Beauty</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.css">
+    <link rel="stylesheet" href="styles/themify-icons.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- tags meta -->
+    <!-- Mudando a codificação para utf-8 -->
+    <meta charset="UTF-8">
+    <!-- Definir a compatibilidade do navegador da web, especialmente no contexto do Internet Explorer (IE) -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <!-- Controlar a forma como um site é exibido em dispositivos móveis, como smartphones e tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <main>
+        <!-- Navegação -->
+        <nav class="navbar fixed-top navbar-expand-md navbar-light" role="navigation">
+            <div class="container container-nav">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html#inicio">
+                    <img class="logo__img" src="assets/mlb-logo.png" alt="Maria Luiza Beauty Logo"
+                        loading="lazy" />
+                </a>
+                <!-- Menu Hamburguer -->
+                <button class="navbar-dark navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                    aria-label="Alterna navegação">
+                    <!--<span class="navbar-toggler-icon"></span>-->
+                    <span class="menu_hamburguer_icone ti-menu"></span>
+                </button>
+                <!-- Lista de itens do menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active nav-link-ativo letras-espacadas-pequeno" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link letras-espacadas-pequeno" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link letras-espacadas-pequeno" href="#galeria">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link letras-espacadas-pequeno" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link letras-espacadas-pequeno" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Home -->
+        <section class="section__inicio" id="inicio">
+            <!-- Container normal para criar as bordas -->
+            <div class="container">
+                <!-- conteúdo principal -->
+                <div class="row">
+                    <!-- col 12 para ocupar todo o container pai -->
+                    <div class="section__inicio__div col-12 text-left caption">
+                        <hr class="separador texto-principal">
+                        <h5 class="letras-espacadas-medio texto-secundario">Makeup artist</h5>
+                        <h1 class="letras-espacadas-pequeno texto-principal texto-branco"><strong>Maria Luiza</strong>
+                        </h1>
+                        <a href="#sobre" class="btn btn_cta texto-secundario">Sobre mim</a>
                     </div>
                 </div>
-            </nav>
-            <!-- Home -->
-            <section class="section__inicio" id="inicio">
-                <!-- Container normal para criar as bordas -->
-                <div class="container">
-                    <!-- conteúdo principal -->
-                    <div class="row">
-                        <!-- col 12 para ocupar todo o container pai -->
-                        <div class="section__inicio__div col-12 text-left caption">
+                <!-- seta de scroll -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="div_flutuante text-center">
+                            <a href="#sobre" data-scroll-nav="1" class="seta_scroll">
+                                <span class="icone_seta ti-angle-double-down"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sobre -->
+        <section class="section__sobre" id="sobre">
+            <!-- Container normal para criar as bordas -->
+            <div class="container">
+                <!-- Conteúdo sobre -->
+                <div class="row">
+                    <div class="col-md-5 mt-3">
+                        <!-- Imagem sobre -->
+                        <div class="section__sobre__img"></div>
+                    </div>
+                    <div class="col-md-7 mt-3">
+                        <!-- Titulo texto sobre -->
+                        <div class="section__sobre__titulo">
+                            <span class="letras-espacadas-pequeno texto_highlight">Sobre mim</span>
+                            <h2 class="letras-espacadas-pequeno texto__letreiro__nome">Maria Luiza</h2>
                             <hr class="separador texto-principal">
-                            <h5 class="letras-espacadas-medio texto-secundario">Makeup artist</h5>
-                            <h1 class="letras-espacadas-pequeno texto-principal texto-branco"><strong>Maria Luiza</strong></h1>
-                            <a href="#sobre" class="btn btn_cta texto-secundario">Sobre mim</a>
                         </div>
-                    </div>
-                    <!-- seta de scroll -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="div_flutuante text-center">
-                                <a href="#sobre" data-scroll-nav="1" class="seta_scroll">
-                                    <span class="icone_seta ti-angle-double-down"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Sobre -->
-            <section class="section__sobre" id="sobre">
-                <!-- Container normal para criar as bordas -->
-                <div class="container">
-                    <!-- Conteúdo sobre -->
-                    <div class="row">
-                        <div class="col-md-5 mt-3">
-                            <!-- Imagem sobre -->
-                            <div class="section__sobre__img"></div>
-                        </div>
-                        <div class="col-md-7 mt-3">
-                            <!-- Titulo texto sobre -->
-                            <div class="section__sobre__titulo">
-                                <span class="letras-espacadas-pequeno texto_highlight">Sobre mim</span>
-                                <h2 class="letras-espacadas-pequeno texto__letreiro__nome">Maria Luiza</h2>
-                                <hr class="separador texto-principal">
-                            </div>
-                            <!-- Quem sou -->
-                            <p class="texto__secundario">
-                                Olá, sou Maria Luiza, esteticista e maquiadora profissional. Tive meus primeiros contatos com a maquiagem ainda bem pequena, lembro-me de usar as sombras coloridas da minha tia e me sentia incrível. Desde aquele dia o que tenho feito é <span class="texto_highlight">ajudar as pessoas a sentirem a beleza em si</span>.
-                            </p>
-                            <!-- Objetivo -->
-                            <p class="texto__secundario">
-                                Para viver esse propósito cada vez com mais intensidade me especializei em Estética e Cosmética. Hoje estou aplicando todo meu conhecimento na prática. Sempre alegre, motivada e empática, entendo que a <span class="texto_highlight">beleza é algo que surge internamente e reflete no exterior</span>.
-                            </p>
-                            <!-- Sociais -->
-                            <div class="section__sobre__sociais">
-                                <a href="https://www.instagram.com/marialuiza_beauty/" target="_blank"><span class="ti-instagram social_link"></span></a>
-                                <a href="https://marialuizabeauty.notion.site/Apresenta-o-40b036b815004649ac4229014ac1d375" target="_blank"><span class="ti-palette social_link"></span></a>
-                                <a href="https://www.linkedin.com/in/maria-luiza-guerreiro-537822253/" target="_blank"><span class="ti-linkedin social_link"></span></a>
-                                <a href="mailto:beautymarialuiza@gmail.com" target="_blank"><span class="ti-email social_link"></span></a>
-                            </div>
+                        <!-- Quem sou -->
+                        <p class="texto__secundario">
+                            Olá, sou Maria Luiza, esteticista e maquiadora profissional. Tive meus primeiros contatos
+                            com a maquiagem ainda bem pequena, lembro-me de usar as sombras coloridas da minha tia e me
+                            sentia incrível. Desde aquele dia o que tenho feito é <span class="texto_highlight">ajudar
+                                as pessoas a sentirem a beleza em si</span>.
+                        </p>
+                        <!-- Objetivo -->
+                        <p class="texto__secundario">
+                            Para viver esse propósito cada vez com mais intensidade me especializei em Estética e
+                            Cosmética. Hoje estou aplicando todo meu conhecimento na prática. Sempre alegre, motivada e
+                            empática, entendo que a <span class="texto_highlight">beleza é algo que surge internamente e
+                                reflete no exterior</span>.
+                        </p>
+                        <!-- Sociais -->
+                        <div class="section__sobre__sociais">
+                            <a href="https://www.instagram.com/marialuiza_beauty/" target="_blank"><span
+                                    class="ti-instagram social_link"></span></a>
+                            <a href="https://marialuizabeauty.notion.site/Apresenta-o-40b036b815004649ac4229014ac1d375"
+                                target="_blank"><span class="ti-palette social_link"></span></a>
+                            <a href="https://www.linkedin.com/in/maria-luiza-guerreiro-537822253/" target="_blank"><span
+                                    class="ti-linkedin social_link"></span></a>
+                            <a href="mailto:beautymarialuiza@gmail.com" target="_blank"><span
+                                    class="ti-email social_link"></span></a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Serviços -->
-            <!-- Portifólio -->
-            <!-- Opiniões -->
-        </main>
-        <footer>
-            <!-- Rodapé -->
-        </footer>
-        <!-- jQuery (Bootstrap depende do jQuery) -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- Popper.js (opcional, mas necessário para alguns recursos do Bootstrap) -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
-        <!-- Bootstrap JS -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
+            </div>
+        </section>
+        <!-- Galeria -->
+        <section class="section__galeria" id="galeria">
+            <!-- Container normal para criar as bordas -->
+            <div class="container">
+                <!-- Conteúdo sobre -->
+                <div class="row">
+                    <div class="col-md-12 mt-3">
+                        <span class="letras-espacadas-pequeno texto_highlight">Clientes</span>
+                        <h2 class="letras-espacadas-pequeno texto__letreiro__nome">Galeria</h2>
+                        <hr class="separador texto-principal">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-3">
+                        <!-- caroussel de imagens da galeria-->
+                        <div class="owl-carousel owl-drag">
+                            <div class="item">
+                                <img src="assets/carousel/make_1.png" alt="Foto da primeira maquiagem">
+                            </div>
+                            <div class="item">
+                                <img src="assets/carousel/make_2.png" alt="Foto da segunda maquiagem">
+                            </div>
+                            <div class="item">
+                                <img src="assets/carousel/make_3.png" alt="Foto da terceira maquiagem">
+                            </div>
+                            <div class="item">
+                                <img src="assets/carousel/make_4.png" alt="Foto da quarta maquiagem">
+                            </div>
+                            <div class="item">
+                                <img src="assets/carousel/sobrancelha_1.png" alt="Foto de design de sobrancelha">
+                            </div>
+                            <div class="item">
+                                <img src="assets/carousel/limpeza_1.png" alt="Foto de limpeza de pele">
+                            </div>
+                            <div class="item">
+                                <img src="assets/carousel/art_1.png" alt="Foto de maquiagem artística">
+                            </div>
+                        </div>
+                        <!-- fim carousel -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portifólio -->
+    </main>
+    <!-- Opiniões -->
+    <footer>
+        <!-- Rodapé -->
+    </footer>
+    <!-- jQuery (Bootstrap depende do jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Popper.js (opcional, mas necessário para alguns recursos do Bootstrap) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- SCRIPT para o Owl Carousel-->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/owl.carousel.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
 </html>

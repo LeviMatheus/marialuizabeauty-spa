@@ -114,7 +114,7 @@ body {
     align-items: center;
     box-sizing: border-box;
     box-sizing: border-box; /* elementos filhos do body vão ocupar somente o espaço do body, ou seja, não sair da tela */
-    background-image: url('../assets/parallax.jpg');
+    background-image: url('../assets/home.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -193,6 +193,16 @@ body {
 }
 
 .section__sobre { /* Seção do sobre */
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.section__galeria {
     min-height: 100vh;
     overflow: hidden;
     display: flex;
