@@ -29,6 +29,14 @@ html {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 body {
     /* height: 100vh; o body ocupar 100% da tela do dispositivo */
     overflow-x: hidden;
@@ -221,4 +229,26 @@ body {
     font-size: 3rem;
     line-height: 1.2em;
     font-weight: 400;
+}
+
+.social_link {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    margin: 10px;
+    color: var(--cor-neutra);
+}
+
+.social_link:hover {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    margin: 10px;
+    color: var(--cor-principal);
+}
+
+.section__sobre__sociais {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
