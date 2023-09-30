@@ -5,7 +5,7 @@
     /* Variáveis Cores globais */
     --cor-secundaria: #ffffff;
     --cor-terciaria: #000000;
-    --cor-neutra: #333;
+    --cor-neutra: #9b9b9b;
     --cor-principal: #9d13af;
     --cor-principal-texto: #e51cff;
     --cor-secundaria-texto: #ffffff;
@@ -175,7 +175,7 @@ body {
     60% {
       transform: translateY(-15px);
     }
-  }
+}
 
 .seta_scroll {
     height: 40px;
@@ -266,4 +266,126 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+}
+
+.section__servicos {
+    background-color: var(--cor-terciaria);
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.section__servicos__img {
+    box-sizing: border-box; /* elementos filhos do body vão ocupar somente o espaço do body, ou seja, não sair da tela */
+    background-image: url('../assets/services.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    min-height: 300px;
+    width: 100%;
+}
+
+.section__contato {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.quadro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.quadro__servicos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.quadro__servicos__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.btn_contato {
+    padding: 12px 32px;
+    cursor: pointer;
+    background: var(--cor-principal);
+    position: relative;
+    color: #fff;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: inline-block;
+    border-radius: 0;
+    border: none;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid var(--cor-neutra);
+}
+
+/* Sobrepondo o estilo do formulário bootstrap */
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="file"],
+textarea {
+    max-width: 100%;
+    margin-bottom: 15px;
+    padding: 18px 0px 10px;
+    height: auto;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.75em;
+    font-weight: 400;
+    color: var(--cor-principal-texto);
+    background-image: none;
+    border-color: ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 2px solid var(--cor-principal-texto);
+    background-color: transparent;
+}
+
+.section__contato__sociais {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+footer {
+    background-color: var(--cor-terciaria-texto);
 }

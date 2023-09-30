@@ -27,8 +27,7 @@
             <div class="container container-nav">
                 <!-- Logo -->
                 <a class="navbar-brand" href="index.html#inicio">
-                    <img class="logo__img" src="assets/mlb-logo.png" alt="Maria Luiza Beauty Logo"
-                        loading="lazy" />
+                    <img class="logo__img" src="assets/mlb-logo.png" alt="Maria Luiza Beauty Logo" loading="lazy" />
                 </a>
                 <!-- Menu Hamburguer -->
                 <button class="navbar-dark navbar-toggler" type="button" data-toggle="collapse"
@@ -161,6 +160,12 @@
                                 <img src="assets/carousel/make_4.png" alt="Foto da quarta maquiagem">
                             </div>
                             <div class="item">
+                                <img src="assets/carousel/make_5.png" alt="Foto da quinta maquiagem">
+                            </div>
+                            <div class="item">
+                                <img src="assets/carousel/make_6.png" alt="Foto da sexta maquiagem">
+                            </div>
+                            <div class="item">
                                 <img src="assets/carousel/sobrancelha_1.png" alt="Foto de design de sobrancelha">
                             </div>
                             <div class="item">
@@ -175,12 +180,119 @@
                 </div>
             </div>
         </section>
-        <!-- Portifólio -->
+        <!-- Serviços -->
+        <section class="section__servicos" id="servicos">
+            <!-- Container normal para criar as bordas -->
+            <div class="container">
+                <!-- Conteúdo sobre -->
+                <div class="row">
+                    <div class="col-md-6 mt-3">
+                        <!-- Letreiro de serviços -->
+                        <div class="col-md-12">
+                            <span class="letras-espacadas-pequeno texto_highlight">Realce o seu eu</span>
+                            <h2 class="letras-espacadas-pequeno texto__letreiro__nome texto-branco">Serviços</h2>
+                            <hr class="separador texto-principal">
+                        </div>
+                        <!-- Profile de serviços -->
+                        <div class="section__servicos__img">
+                        </div>
+                    </div>
+                    <!-- imagens de serviços -->
+                    <div class="col-md-6 mt-3 quadro">
+                        <div class="row quadro__servicos">
+                            <div class="col-md-4 quadro__servicos__item">
+                                <h6 class="w-100 letras-espacadas-pequeno texto_highlight">Design de Sobrancelhas</h6>
+                            </div>
+                            <div class="col-md-4 quadro__servicos__item">
+                                <h6 class="w-100 letras-espacadas-pequeno texto-branco">Maquiagem Artística</h6>
+                            </div>
+                            <div class="col-md-4 quadro__servicos__item">
+                                <h6 class="w-100 letras-espacadas-pequeno texto_highlight">Maquiagem</h6>
+                            </div>
+                            <div class="col-md-4 quadro__servicos__item">
+                                <h6 class="w-100 letras-espacadas-pequeno texto-branco">Dermaplaning</h6>
+                            </div>
+                            <div class="col-md-4 quadro__servicos__item">
+                                <h6 class="w-100 letras-espacadas-pequeno texto_highlight">Limpeza de Pele</h6>
+                            </div>
+                            <div class="col-md-4 quadro__servicos__item">
+                                <h6 class="w-100 letras-espacadas-pequeno texto-branco">Massagem relaxante</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contato -->
+        <section class="section__contato" id="contato">
+            <!-- Container normal para criar as bordas -->
+            <div class="container">
+                <!-- Título de contato -->
+                <div class="row">
+                    <div class="col-md-12 mt-3">
+                        <span class="letras-espacadas-pequeno texto_highlight">Fale comigo</span>
+                        <h2 class="letras-espacadas-pequeno texto__letreiro__nome">Contato</h2>
+                        <div class="section__contato__sociais">
+                            <a href="https://www.instagram.com/marialuiza_beauty/" target="_blank"><span
+                                    class="ti-instagram social_link"></span></a>
+                            <a href="https://www.linkedin.com/in/maria-luiza-guerreiro-537822253/" target="_blank"><span
+                                    class="ti-linkedin social_link"></span></a>
+                        </div>
+                        <hr class="separador texto-principal">
+                    </div>
+                </div>
+                <!-- Formulário de contato-->
+                <div class="row">
+                    <div class="col-md-12 mt-3">
+                        <form method="post" class="row" id="form-contato">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Seu nome *" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Seu melhor e-mail *" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <textarea name="message" id="message" cols="30" rows="4" class="form-control"
+                                        placeholder="Deixe a sua mensagem..." required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <button class="btn_contato fl-btn" type="submit"
+                                        onclick="mostrarIndisponibilidade()">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="not-available-message" style="display: none;">
+                            <p class="texto-preto">Em breve esta funcionalidade estará disponível. <br /><br /> Enquanto
+                                isso que tal me enviar uma mensagem no <a
+                                    href="https://www.instagram.com/marialuiza_beauty/" target="_blank"
+                                    class="texto_highlight">Instagram</a> ou no <a
+                                    href="https://www.linkedin.com/in/maria-luiza-guerreiro-537822253/" target="_blank"
+                                    class="texto_highlight">LinkedIn</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <!-- Opiniões -->
+    <!-- Rodapé -->
     <footer>
-        <!-- Rodapé -->
+        <div class="container py-4">
+            <!-- Main Footer -->
+            <div class="row">
+            </div>
+            <!-- Sub Footer -->
+            <div class="row">
+            </div>
+        </div>
     </footer>
+
     <!-- jQuery (Bootstrap depende do jQuery) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Popper.js (opcional, mas necessário para alguns recursos do Bootstrap) -->

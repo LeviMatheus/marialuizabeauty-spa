@@ -27,3 +27,11 @@ wind.on("scroll", function () {
         navbar.removeClass("nav-dark");
     }
 });
+
+function mostrarIndisponibilidade() {
+    const notAvailableMessage = document.getElementById("not-available-message");
+    const contactForm = document.getElementById("form-contato");
+
+    notAvailableMessage.style.display = "block";
+    contactForm.style.display = "none";
+}
