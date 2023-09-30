@@ -81,6 +81,11 @@ body {
     background-color: transparent; /* cor transparente */
 }
 
+.nav-dark {
+    background-color: var(--cor-terciaria);
+    opacity: 0.9;
+}
+
 @media (max-width: 235px) { /* ajustar navegação quando resolução mínima 235  */
     .container-nav {
         display: flex;

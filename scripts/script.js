@@ -15,3 +15,15 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+var wind = $(window);
+// Navbar scrolling background
+wind.on("scroll", function () {
+    var bodyScroll = wind.scrollTop(),
+        navbar = $(".navbar");
+    if (bodyScroll > 100) {
+        navbar.addClass("nav-dark");
+    } else {
+        navbar.removeClass("nav-dark");
+    }
+});
