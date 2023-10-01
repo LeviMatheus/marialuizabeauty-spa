@@ -7,8 +7,8 @@
     --cor-secundaria: #ffffff;
     --cor-terciaria: #000000;
     --cor-neutra: #9b9b9b;
-    --cor-principal: #9d13af;
-    --cor-principal-texto: #e51cff;
+    --cor-principal: #7d00af;/*#9d13af*/
+    --cor-principal-texto: #b175ff;/*#e51cff*/
     --cor-secundaria-texto: #ffffff;
     --cor-terciaria-texto: #000000;
     
@@ -36,6 +36,10 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+.policy-link:hover{
+    color:var(--cor-principal-texto) !important;
 }
 
 body {
@@ -248,7 +252,7 @@ body {
 }
 
 .texto__caption {
-    color: var(--cor-neutra) !important;
+    color: var(--cor-neutra);
     font-size: 0.8rem;
 }
 
@@ -331,7 +335,7 @@ body {
     align-items: center;
     justify-content: space-around;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
 }
 
 .btn_contato {
@@ -416,4 +420,20 @@ footer {
     font-family: var(--estilo-fonte-secundario);
     font-size: 0.8rem;
     margin: 8px;
+}
+
+.politicaModal {
+    background-color: var(--cor-terciaria) !important;
+}
+
+.linha-vertical-secoes{
+    position: relative;
+    margin: -35px auto;
+    border: 0;
+    border-left: 1px solid;
+    border-color: var(--cor-principal-texto);
+    width: 2px;
+    height: 70px;
+    z-index: 10;
+    opacity: 1;
 }
