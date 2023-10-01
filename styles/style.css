@@ -1,5 +1,6 @@
 /* importando fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Oswald&display=swap');
 
 :root {
     /* Variáveis Cores globais */
@@ -246,6 +247,11 @@ body {
     font-weight: 400;
 }
 
+.texto__caption {
+    color: var(--cor-neutra) !important;
+    font-size: 0.8rem;
+}
+
 .social_link {
     font-size: 1.5rem;
     line-height: 1.5em;
@@ -388,4 +394,26 @@ textarea {
 
 footer {
     background-color: var(--cor-terciaria-texto);
+}
+
+/* Tabela do rodapé */
+.footer-table {
+    margin: 0;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #fff;
+}
+
+.item_tabela_footer {
+    font-size: 0.8rem;
+    font-family: var(--estilo-fonte-secundario);
+    line-height: 2em;
+}
+
+.brand-message {
+    line-height: 1em;
+    font-family: var(--estilo-fonte-secundario);
+    font-size: 0.8rem;
+    margin: 8px;
 }
