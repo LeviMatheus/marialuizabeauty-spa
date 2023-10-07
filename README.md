@@ -1,21 +1,17 @@
 # marialuizabeauty-spa
 
-Página single page para uma clínica estética (Maria Luiza Beuaty)
-
-<p> Em construção </p>
+Página single page para a clínica estética Maria Luiza Beuaty.
 
 <ul>
     <li><p>Tópicos:</p></li>
-    <li><p>Clean Code Structure</p></li>
+    <li><p>Estrutura semântica</p></li>
     <li><p>Bootstrap 5</p></li>
-    <li><p>Latest OwlCarousel</p></li>
-    <li><p>Fully Responsive & Mobile Friendly</p></li>
-    <li><p>Retina Ready</p></li>
-    <li><p>Coded with SEO in Mind</p></li>
-    <li><p>ET Line Icons</p></li>
-    <li><p>Themify Icons</p></li>
-    <li><p>Animate CSS</p></li>
-    <li><p>W3C valid HTML files</p></li>
-    <li><p>Well commented code</p></li>
+    <li><p>OwlCarousel</p></li>
+    <li><p>Responsivo e Mobile First</p></li>
+    <li><p>SEO</p></li>
+    <li><p>Themify Icones</p></li>
+    <li><p>CSS animado</p></li>
+    <li><p>HTML W3C valido</p></li>
+    <li><p>Código comentado</p></li>
     <li><p>Google Fonts</p></li>
 </ul>
